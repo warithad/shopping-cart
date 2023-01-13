@@ -19,8 +19,11 @@ const FooterContainer = styled.div`
     gap: 1rem;
     font-family: Arial;
     padding: 20px 0;
-    transition: transform 1s;
 
+    a{
+        transition: 1s;
+    }
+    
     a:hover{
         transform: rotateX(360deg);
         scale: 1.2;
