@@ -1,0 +1,58 @@
+[
+    {
+        "id": 0,
+        "name": "MERCURY",
+        "price": 19.99,
+        "img": ""
+    },
+    {
+        "id": 1,
+        "name": "VENUS",
+        "price": 20.99,
+        "img": ""
+    },
+
+    {
+        "id": 2,
+        "name": "EARTH",
+        "price": 50.99,
+        "img": ""
+    },
+    {
+        "id": 3,
+        "name": "MARS",
+        "price": 19.99,
+        "img": ""
+    },
+    {
+        "id": 4,
+        "name": "JUPITER",
+        "price": 45.99,
+        "img": ""
+    },
+    {
+        "id": 5,
+        "name": "SATURN",
+        "price": 19.99,
+        "img": ""
+    },
+    {
+        "id": 6,
+        "name": "URANUS",
+        "price": 19.99,
+        "img": ""
+    },
+    {
+        "id": 7,
+        "name": "NEPTUNE",
+        "price": 19.99,
+        "img": ""
+    },
+
+        {
+        "id": 8,
+        "name": "PLUTO",
+        "price": 19.99,
+        "img": ""
+    }
+]
