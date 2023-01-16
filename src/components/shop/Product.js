@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-const Product =({name, 
+const Product =({id,
+                name, 
                 price, 
                 image, 
                 about, 
@@ -12,7 +13,7 @@ const Product =({name,
         <img src={image} alt={name}/>
         <h3>${price}</h3>
         <p>{about}</p>
-        <button onClick={(name, price) =>onAddToCart(name, price)}>Add to Cart</button>
+        <button onClick={(id) =>onAddToCart(id)}>Add to Cart</button>
     </ProductWrapper>
     )    
 }
