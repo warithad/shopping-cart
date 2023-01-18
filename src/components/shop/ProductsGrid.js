@@ -14,7 +14,7 @@ const ProductsGrid =({onAddToCart})=>{
                         price={planet.price}
                         image={planet.img}
                         about=''
-                        onAddToCart={onAddToCart}
+                        onAddToCart={id => onAddToCart(planet.id)}
                     />
                 )
             })}
