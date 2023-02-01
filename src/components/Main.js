@@ -24,8 +24,19 @@ const Main =()=>{
         }
     }
 
-    const onRemoveItemFromCart = name =>{
+    const onRemoveItemFromCart = id =>{
+        const item = shoppingCart.find((i) => i.planet.id === id);
+        const itemIndex = shoppingCart.findIndex(i => i.planet.id === id);
 
+        if(item.quantity === 1){
+            const newCart = shoppingCart.filter(i => i.planet.id === id );
+            setShoppingCart(newCart);
+        }else{
+            const newCart = shoppingCart.slice();
+            newCart[itemIndex].quantity--;
+            setShoppingCart(newCart);
+        }
+        console.log(shoppingCart);
     }
 
     return (
