@@ -29,7 +29,7 @@ const Main =()=>{
         const itemIndex = shoppingCart.findIndex(i => i.planet.id === id);
 
         if(item.quantity === 1){
-            const newCart = shoppingCart.filter(i => i.planet.id === id );
+            const newCart = shoppingCart.filter(i => i.planet.id !== id );
             setShoppingCart(newCart);
         }else{
             const newCart = shoppingCart.slice();
