@@ -30,7 +30,6 @@ const Main =()=>{
         }
         else {
             setShoppingCart([...shoppingCart, item])
-            console.log(shoppingCart);
         }
     }
 
@@ -46,7 +45,6 @@ const Main =()=>{
             newCart[itemIndex].quantity--;
             setShoppingCart(newCart);
         }
-        console.log(shoppingCart);
     }
 
     return (
