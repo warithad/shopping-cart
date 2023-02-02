@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Checkout from "../pages/Checkout";
 import Home from "../pages/Home";
@@ -7,6 +7,16 @@ import Planets from "../utils/planets.json"
 
 const Main =()=>{
     const [shoppingCart, setShoppingCart] = useState([]);
+    const [total, setTotal] = useState(0);
+
+    useEffect(() =>{
+        const newTotal = shoppingCart.reduce((result, item)=>{
+            result += (item.planet.price * item.quantity);
+            return result;
+        }, 0)
+
+        setTotal(newTotal);
+    }, [shoppingCart])
 
     const onAddToCart =(id)=>{
 
@@ -50,6 +60,7 @@ const Main =()=>{
                         onAddToCart={onAddToCart}
                         onRemoveItemFromCart={onRemoveItemFromCart}
                         shoppingCart={shoppingCart}
+                        total={total}
                     />
                     }/>
             </Routes>
